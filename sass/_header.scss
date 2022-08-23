@@ -1,0 +1,15 @@
+@use "variables";
+
+.headerNav {
+    background-color: variables.$color-1;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.header__logo {
+    width: 10rem;
+}
+
+.headerNav__flex {
+    display: flex;
+    align-items: center;
+}

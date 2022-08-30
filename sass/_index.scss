@@ -1,0 +1,23 @@
+@use "variables";
+
+.image__moi {
+    width: 100%;
+    border-radius: 15rem;
+}
+
+.section__presentation {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: variables.$color-2;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    color: variables.$color-3;
+    border-bottom: solid 0.25rem variables.$color-1;
+    margin-top: 5rem;
+}
+
+.icon__loisir {
+    background-color: variables.$color-3;
+}

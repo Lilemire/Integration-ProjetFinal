@@ -40,7 +40,30 @@ h1 {
   color: #C8B6FF;
 }
 
+.image__moi {
+  width: 100%;
+  border-radius: 15rem;
+}
+
+.section__presentation {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #F5F5F5;
+}
+
+h2 {
+  font-family: "Satisfy", cursive;
+  color: #C8B6FF;
+  border-bottom: solid 0.25rem #131313;
+  margin-top: 5rem;
+}
+
+.icon__loisir {
+  background-color: #C8B6FF;
+}
+
 body {
   background-color: #BBD0FF;
+  font-family: "Lato", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

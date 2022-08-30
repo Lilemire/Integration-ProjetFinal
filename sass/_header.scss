@@ -3,6 +3,7 @@
 .headerNav {
     background-color: variables.$color-1;
     padding: 2rem 0rem 2rem 0rem;
+    border-bottom: solid 1rem variables.$color-2;
 }
 
 .header__logo {
@@ -12,4 +13,34 @@
 .headerNav__flex {
     display: flex;
     align-items: center;
+    width: 100%;
 }
+
+.headerNav__flex--logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.headerNav__flex--menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    color: variables.$color-4;
+    border: solid 0.25rem variables.$color-4;
+
+    &:hover {
+        color: variables.$color-1;
+        background-color: variables.$color-5;
+        border: solid 0.25rem variables.$color-2;
+    }
+    
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    color: variables.$color-3;
+}
+

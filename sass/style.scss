@@ -1,2 +1,6 @@
 @use "variables";
 @use "header";
+
+body {
+    background-color: variables.$color-5;
+}

@@ -1,6 +1,7 @@
 .headerNav {
   background-color: #131313;
   padding: 2rem 0rem 2rem 0rem;
+  border-bottom: solid 1rem #F5F5F5;
 }
 
 .header__logo {
@@ -10,5 +11,36 @@
 .headerNav__flex {
   display: flex;
   align-items: center;
+  width: 100%;
+}
+
+.headerNav__flex--logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.headerNav__flex--menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  color: #B8C0FF;
+  border: solid 0.25rem #B8C0FF;
+}
+.btn:hover {
+  color: #131313;
+  background-color: #BBD0FF;
+  border: solid 0.25rem #F5F5F5;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+  color: #C8B6FF;
+}
+
+body {
+  background-color: #BBD0FF;
 }
 /*# sourceMappingURL=style.css.map */

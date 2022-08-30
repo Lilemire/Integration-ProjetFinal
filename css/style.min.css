@@ -1,2 +1,2 @@
-.headerNav{background-color:#131313;padding:2rem 0rem 2rem 0rem}.header__logo{width:10rem}.headerNav__flex{display:flex;align-items:center}
+.headerNav{background-color:#131313;padding:2rem 0rem 2rem 0rem;border-bottom:solid 1rem #f5f5f5}.header__logo{width:10rem}.headerNav__flex{display:flex;align-items:center;width:100%}.headerNav__flex--logo{display:flex;align-items:center;width:100%}.headerNav__flex--menu{display:flex;justify-content:flex-end}.btn{color:#b8c0ff;border:solid .25rem #b8c0ff}.btn:hover{color:#131313;background-color:#bbd0ff;border:solid .25rem #f5f5f5}h1{font-family:"Satisfy",cursive;color:#c8b6ff}body{background-color:#bbd0ff}
 /*# sourceMappingURL=style.min.css.map */

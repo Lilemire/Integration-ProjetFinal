@@ -41,6 +41,34 @@ h1 {
   color: #C8B6FF;
 }
 
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0rem 1rem 0rem;
+  background-color: #C8B6FF;
+  font-weight: 900;
+  color: #131313;
+  border-top: solid 0.25rem #131313;
+}
+
+.footer__mediaicon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+.footer--leftalign {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer--joindre, a {
+  text-decoration: none;
+  color: #131313;
+}
+.footer--joindre :hover, a :hover {
+  color: #F5F5F5;
+}
+
 /* Section Présentation */
 .image__moi {
   width: 100%;

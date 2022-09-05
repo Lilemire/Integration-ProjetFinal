@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .headerNav {
   background-color: #131313;
   padding: 2rem 0rem 2rem 0rem;
@@ -40,6 +41,7 @@ h1 {
   color: #C8B6FF;
 }
 
+/* Section Présentation */
 .image__moi {
   width: 100%;
   border-radius: 15rem;
@@ -56,10 +58,97 @@ h2 {
   color: #C8B6FF;
   border-bottom: solid 0.25rem #131313;
   margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
-.icon__loisir {
+.icon__loisir--roller {
   background-color: #C8B6FF;
+  padding: 3rem 1rem 3rem 1rem;
+  border-radius: 25rem;
+}
+.icon__loisir--roller:hover {
+  background-color: #F5F5F5;
+  border: solid 0.125rem #131313;
+}
+
+.icon__loisir--arts {
+  background-color: #B8C0FF;
+  padding: 3rem 1rem 3rem 1rem;
+  border-radius: 25rem;
+}
+.icon__loisir--arts:hover {
+  background-color: #F5F5F5;
+  border: solid 0.125rem #131313;
+}
+
+.icon__loisir--auto {
+  background-color: #BBD0FF;
+  padding: 3rem 1rem 3rem 1rem;
+  border-radius: 25rem;
+}
+.icon__loisir--auto:hover {
+  background-color: #F5F5F5;
+  border: solid 0.125rem #131313;
+}
+
+.icon__loisir--flex {
+  display: flex;
+}
+
+.section__presentation--text {
+  color: #131313;
+  margin-top: 2rem;
+}
+
+/* Section Roller Skate */
+#section__rollerskate {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #F5F5F5;
+}
+
+.section__rollerskate--video {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* Section Arts */
+#section__arts {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #F5F5F5;
+}
+
+.image__grille {
+  width: 100%;
+}
+
+.image__grille--tablette1 {
+  width: 100%;
+  margin-left: -1.5rem;
+  margin-bottom: -41rem;
+}
+
+.image__grille--fusain {
+  width: 100%;
+  margin-left: -1.5rem;
+}
+
+.image__grille--diamondpainting {
+  width: 100%;
+  margin-left: -3rem;
+}
+
+.image__grille--crane {
+  width: 100%;
+  margin-left: -1.5rem;
+}
+
+/* Section Automobile */
+#section__automobile {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #F5F5F5;
 }
 
 body {

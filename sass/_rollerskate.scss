@@ -1,0 +1,22 @@
+@use "variables";
+
+.row--cardrollerskate {
+    margin-left: 0.0125rem;
+}
+
+.card {
+    background-color: variables.$color-2;
+    margin-top: 2rem;
+}
+
+.card-img-top {
+    margin-top: 0.5rem;
+    margin-bottom: -5rem;
+}
+
+.btn__card {
+    width: 100%;
+    background-color: variables.$color-1;
+    color: variables.$color-5;
+    border: solid 0.25rem variables.$color-5;
+}

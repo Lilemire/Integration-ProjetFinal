@@ -29,58 +29,102 @@
     <meta name="theme-color" content="#131313" />
 
     <script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('service-worker.js')
-					.then((reg) => {
-						console.log('Notre service worker est chargé !', reg);
-					});
-			});
-		}
-	</script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Notre service worker est chargé !', reg);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar headerNav">
-            <div class="headerNav__flex">
-                <div class="headerNav__flex--logo">
-                    <img class="header__logo" src="images/logo.svg" alt="Logo oiseau mauve" href="index.html">
-                    <h1>Lindsay Lemire</h1>
+        <div class="navbar__general">
+            <nav class="navbar headerNav">
+                <div class="headerNav__flex">
+                    <div class="headerNav__flex--logo">
+                        <img class="header__logo" src="images/logo.svg" alt="Logo oiseau mauve" href="index.html">
+                        <h1>Lindsay Lemire</h1>
+                    </div>
+                    <form class="container-fluid headerNav__flex--menu">
+                        <a class="nav-link px-lg-4 px-2" id="btnInstall" aria-label="Install" hidden>Installer la
+                            PWA</a>
+                        <a class="btn me-2" type="button" href="rollerskate.html">Roller Skate</a>
+                        <a class="btn me-2" type="button" href="arts.html">Arts</a>
+                        <a class="btn me-2" type="button" href="automobile.html">Automobile</a>
+                    </form>
                 </div>
-                <form class="container-fluid headerNav__flex--menu">
-                    <a class="nav-link px-lg-4 px-2" id="btnInstall"
-                    aria-label="Install" hidden>Installer la PWA</a>
-                    <a class="btn me-2" type="button" href="rollerskate.html">Roller Skate</a>
-                    <a class="btn me-2" type="button" href="arts.html">Arts</a>
-                    <a class="btn me-2" type="button" href="automobile.html">Automobile</a>
-                </form>
+            </nav>
+        </div>
+
+        <div class="navbar__burger">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="headerNav__burger p-4">
+                    <form class="container-fluid headerNav__flex--menu">
+                        <a class="nav-link px-lg-4 px-2" id="btnInstall" aria-label="Install" hidden>Installer la
+                            PWA</a>
+                        <a class="btn me-2" type="button" href="rollerskate.html">Roller Skate</a>
+                        <a class="btn me-2" type="button" href="arts.html">Arts</a>
+                        <a class="btn me-2" type="button" href="automobile.html">Automobile</a>
+                    </form>
+                </div>
             </div>
+            <nav class="navbar navbar-dark headerNav__burger">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="navbar__burger--flex">
+                            <div class="headerNav__flex--logo">
+                                <img class="header__logo" src="images/logo.svg" alt="Logo oiseau mauve"
+                                    href="index.html">
+                                <h1>Lindsay Lemire</h1>
+                            </div>
+
+                            <div class="navbar__burger--flexbutton">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
         </nav>
+        </div>
     </header>
 
     <main>
         <div class="container">
             <section class="section__presentation">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="presentation__photo">
                             <img src="images/moi.jpg" class="image__moi" alt="Une photo de moi">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <h2>Un site à propos de moi...</h2>
                         <div class="icon__loisir--flex">
-                            <div class="col-lg-2 offset-lg-0">
+                            <div
+                                class="col-xl-2 offset-xl-0 col-lg-2 offset-lg-0 offset-md-0 col-md-2 offset-sm-0 col-sm-2 offset-0 col-2">
                                 <a class="icon__loisir--roller" href="#section__rollerskate"><img
                                         class="icon__loisir--images" src="images/rollerskate.svg"
                                         alt="icon de roller skate" /></a>
                             </div>
-                            <div class="col-lg-2 offset-lg-2">
+                            <div
+                                class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-2 offset-2 col-2">
                                 <a class="icon__loisir--arts" href="#section__arts"><img class="icon__loisir--images"
                                         src="images/arts.svg" alt="icon d'arts" /></a>
                             </div>
-                            <div class="col-lg-2 offset-lg-2">
+                            <div
+                                class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 offset-md-1 col-md-2 offset-sm-2 col-sm-2 offset-2 col-2">
                                 <a class="icon__loisir--auto" href="#section__automobile"><img
                                         class="icon__loisir--images" src="images/auto.svg"
                                         alt="icon d'automobile" /></a>
@@ -98,7 +142,7 @@
             <section id="section__rollerskate">
                 <div class="row">
                     <h2>Roller Skate</h2>
-                    <div class="col-lg-12">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <iframe class="section__rollerskate--video" width="560" height="315"
                             src="https://www.youtube.com/embed/kPcEFHA3X0c" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -110,25 +154,26 @@
             <section id="section__arts">
                 <div class="row">
                     <h2>Arts</h2>
-                    <div class="offset-xl-4 col-xl-3">
+                    <div class="offset-xl-4 col-xl-3 offset-lg-4 col-lg-3 offset-md-4 col-md-3 offset-sm-4 col-sm-4 col-12">
                         <img src="images/artimg7.jpg" class="image__grille" alt="Photo dune colombe">
                     </div>
-                    <div class="offset-xl-0 col-xl-4">
-                        <img src="images/artimg1.jpg" class="image__grille--tablette1" alt="Photo d'un dessin sur tablette">
+                    <div class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 offset-sm-0 col-sm-6 col-12">
+                        <img src="images/artimg1.jpg" class="image__grille--tablette1"
+                            alt="Photo d'un dessin sur tablette">
                     </div>
-                    <div class="offset-xl-0 col-xl-4">
+                    <div class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 offset-sm-0 col-sm-6 col-12">
                         <img src="images/artimg2.jpg" class="image__grille" alt="Dessin en couleurs">
                     </div>
-                    <div class="offset-xl-0 col-xl-4">
+                    <div class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 col-sm-6 col-12">
                         <img src="images/artimg3.jpg" class="image__grille--fusain" alt="Dessin au fusain">
                     </div>
-                    <div class="offset-xl-0 col-xl-4">
+                    <div class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 offset-sm-0 col-sm-6 col-12">
                         <img src="images/artimg4.jpg" class="image__grille--diamondpainting" alt="Diamond painting">
                     </div>
-                    <div class="offset-xl-2 col-xl-4">
+                    <div class="offset-xl-2 col-xl-4 offset-lg-2 col-lg-4 offset-md-2 col-md-4 offset-sm-2 col-sm-8 col-12">
                         <img src="images/artimg5.jpg" class="image__grille" alt="Dessin sur tablette">
                     </div>
-                    <div class="offset-xl-0 col-xl-3">
+                    <div class="offset-xl-0 col-xl-3 offset-lg-0 col-lg-3 offset-md-0 col-md-3 offset-sm-4 col-sm-4 col-12">
                         <img src="images/artimg6.jpg" class="image__grille--crane" alt="Photo d'un crane">
                     </div>
                 </div>
@@ -164,30 +209,30 @@
     <footer>
         <div class="container">
             <div class="row">
-            <div class="offset-xl-0 col-xl-6">
-                <p>intégration des interfaces Web 2 - Projet Final</p>
-                <p>Lindsay Lemire</p>
-            </div>
-            <div class="col-xl-6 footer--leftalign">
-                <img src="images/facebook-icon.png" class="footer__mediaicon" alt="Icon facebook">
-                <img src="images/instagram-icon.png" class="footer__mediaicon" alt="Icon instagram">
-                <img src="images/twitter-icon.png" class="footer__mediaicon" alt="Icon twitter">
-                <img src="images/linkedin-icon.png" class="footer__mediaicon" alt="Icon linkedin">
-            </div>
-            <div class="offset-xl-6 col-xl-6 footer--leftalign">
-                <div class="footer--joindre">
-                    <img src="images/tel.svg" class="footer__mediaicon" alt="Icon téléphone">
-                    <a href="tel:+18193844571">819 384-4571</a>
+                <div class="offset-xl-0 col-xl-6 offset-lg-0 col-lg-6 offset-md-0 col-md-6 col-sm-12 col-12">
+                    <p>intégration des interfaces Web 2 - Projet Final</p>
+                    <p>Lindsay Lemire</p>
                 </div>
-                <div class="footer--joindre">
-                    <img src="images/mail.svg" class="footer__mediaicon" alt="Icon mail">
-                    <a href="mailto:lindsay_lemire@hotmail.com">lindsay_lemire@hotmail.com</a>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer--leftalign">
+                    <img src="images/facebook-icon.png" class="footer__mediaicon" alt="Icon facebook">
+                    <img src="images/instagram-icon.png" class="footer__mediaicon" alt="Icon instagram">
+                    <img src="images/twitter-icon.png" class="footer__mediaicon" alt="Icon twitter">
+                    <img src="images/linkedin-icon.png" class="footer__mediaicon" alt="Icon linkedin">
+                </div>
+                <div class="offset-xl-6 col-xl-6 offset-lg-6 col-lg-6 offset-md-4 col-md-8 col-sm-12 col-12 footer--leftalign">
+                    <div class="footer--joindre">
+                        <img src="images/tel.svg" class="footer__mediaicon" alt="Icon téléphone">
+                        <a href="tel:+18193844571">819 384-4571</a>
+                    </div>
+                    <div class="footer--joindre">
+                        <img src="images/mail.svg" class="footer__mediaicon" alt="Icon mail">
+                        <a href="mailto:lindsay_lemire@hotmail.com">lindsay_lemire@hotmail.com</a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </footer>
-	<script src="js/install.js"></script>
+    <script src="js/install.js"></script>
 </body>
 
 </html>

@@ -28,3 +28,9 @@ footer {
         color: variables.$color-2
     }
 }
+
+@media screen and (max-width: 720px) {
+    .footer--leftalign {
+        justify-content: flex-start;
+    }
+}

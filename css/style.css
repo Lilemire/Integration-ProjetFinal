@@ -5,6 +5,10 @@
   border-bottom: solid 1rem #F5F5F5;
 }
 
+.headerNav__burger {
+  background-color: #131313;
+}
+
 .header__logo {
   width: 10rem;
 }
@@ -41,6 +45,37 @@ h1 {
   color: #C8B6FF;
 }
 
+.row {
+  width: 100%;
+}
+
+.navbar__burger--flexbutton {
+  display: flex;
+  justify-content: flex-end;
+  height: 3rem;
+}
+
+.navbar__burger--flex {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar__general {
+    display: block;
+  }
+  .navbar__burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .navbar__general {
+    display: none;
+  }
+  .navbar__burger {
+    display: block;
+  }
+}
 footer {
   margin-top: 2rem;
   padding: 1rem 0rem 1rem 0rem;
@@ -69,6 +104,11 @@ footer {
   color: #F5F5F5;
 }
 
+@media screen and (max-width: 720px) {
+  .footer--leftalign {
+    justify-content: flex-start;
+  }
+}
 /* Section Présentation */
 .image__moi {
   width: 100%;
@@ -172,6 +212,45 @@ h2 {
   margin-left: -1.5rem;
 }
 
+@media screen and (max-width: 1399px) {
+  .image__grille--tablette1 {
+    margin-bottom: -34rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .image__grille--tablette1 {
+    margin-bottom: -28rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .image__grille--tablette1 {
+    margin-bottom: -19rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .image__grille--tablette1 {
+    margin-bottom: -6rem;
+    margin-left: 1.5rem;
+  }
+  .image__grille--fusain {
+    margin-left: 1.5rem;
+  }
+  .image__grille--diamondpainting {
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .image__grille--tablette1 {
+    margin-bottom: 0rem;
+    margin-left: 0;
+  }
+  .image__grille--fusain {
+    margin-left: 0;
+  }
+  .image__grille--crane {
+    margin-left: 0;
+  }
+}
 /* Section Automobile */
 #section__automobile {
   margin-top: 2rem;

@@ -27,6 +27,17 @@
     <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
     <meta name="description" content="A sample weather app">
     <meta name="theme-color" content="#131313" />
+
+    <script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('service-worker.js')
+					.then((reg) => {
+						console.log('Notre service worker est chargé !', reg);
+					});
+			});
+		}
+	</script>
 </head>
 
 <body>
@@ -38,6 +49,8 @@
                     <h1>Lindsay Lemire</h1>
                 </div>
                 <form class="container-fluid headerNav__flex--menu">
+                    <a class="nav-link px-lg-4 px-2" id="btnInstall"
+                    aria-label="Install" hidden>Installer la PWA</a>
                     <a class="btn me-2" type="button" href="rollerskate.html">Roller Skate</a>
                     <a class="btn me-2" type="button" href="arts.html">Arts</a>
                     <a class="btn me-2" type="button" href="automobile.html">Automobile</a>

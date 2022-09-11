@@ -283,6 +283,10 @@ h2 {
   margin-top: -0.25rem;
 }
 
+.collapsed {
+  background-color: #F5F5F5;
+}
+
 .img__auto {
   width: 100%;
 }

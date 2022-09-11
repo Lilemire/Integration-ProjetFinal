@@ -40,6 +40,12 @@
   border: solid 0.25rem #F5F5F5;
 }
 
+.btn__active {
+  color: #131313;
+  background-color: #C8B6FF;
+  border: solid 0.25rem #F5F5F5;
+}
+
 h1 {
   font-family: "Satisfy", cursive;
   color: #C8B6FF;
@@ -277,6 +283,38 @@ h2 {
   background-color: #131313;
   color: #BBD0FF;
   border: solid 0.25rem #BBD0FF;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .errorMessage {
+  color: #ff3860;
+  font-size: 9px;
+  margin-top: 13px;
 }
 
 .h2--haut {

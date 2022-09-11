@@ -43,6 +43,12 @@
     
 }
 
+.btn__active {
+    color: variables.$color-1;
+        background-color: variables.$color-3;
+        border: solid 0.25rem variables.$color-2;
+}
+
 h1 {
     font-family: 'Satisfy', cursive;
     color: variables.$color-3;

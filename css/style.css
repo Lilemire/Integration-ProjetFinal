@@ -283,6 +283,14 @@ h2 {
   margin-top: -0.25rem;
 }
 
+.img__auto {
+  width: 100%;
+}
+
+.iframe__website {
+  width: 100%;
+}
+
 body {
   background-color: #BBD0FF;
   font-family: "Lato", sans-serif;

@@ -7,3 +7,9 @@
 .iframe__website {
     width: 100%;
 }
+
+@media screen and (max-width: 720px) {
+    .img__auto {
+        margin-bottom: 1rem;
+    }
+}

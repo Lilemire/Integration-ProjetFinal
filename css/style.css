@@ -291,6 +291,11 @@ h2 {
   width: 100%;
 }
 
+@media screen and (max-width: 720px) {
+  .img__auto {
+    margin-bottom: 1rem;
+  }
+}
 body {
   background-color: #BBD0FF;
   font-family: "Lato", sans-serif;

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techniques d'intégration web 2 - Projet Final</title>
+    <meta name="description" content="Une page représentant moi et mes hobbies" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+    <meta name="description" content="A sample weather app">
+    <meta name="theme-color" content="#131313" />
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Notre service worker est chargé !', reg);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar__general">
+            <nav class="navbar headerNav">
+                <div class="headerNav__flex">
+                    <div class="headerNav__flex--logo">
+                        <img class="header__logo" src="images/logo.svg" alt="Logo oiseau mauve" href="index.html">
+                        <h1>Lindsay Lemire</h1>
+                    </div>
+                    <form class="container-fluid headerNav__flex--menu">
+                        <a class="nav-link px-lg-4 px-2" id="btnInstall" aria-label="Install" hidden>Installer la
+                            PWA</a>
+                        <a class="btn me-2" type="button" href="rollerskate.html">Roller Skate</a>
+                        <a class="btn me-2" type="button" href="arts.html">Arts</a>
+                        <a class="btn me-2" type="button" href="automobile.html">Automobile</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="navbar__burger">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="headerNav__burger p-4">
+                    <form class="container-fluid headerNav__flex--menu">
+                        <a class="nav-link px-lg-4 px-2" id="btnInstall" aria-label="Install" hidden>Installer la
+                            PWA</a>
+                        <a class="btn me-2" type="button" href="rollerskate.html">Roller Skate</a>
+                        <a class="btn me-2" type="button" href="arts.html">Arts</a>
+                        <a class="btn me-2" type="button" href="automobile.html">Automobile</a>
+                    </form>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark headerNav__burger">
+                <div class="container-fluid">
+                    <div class="row row--cardrollerskate">
+
+                        <div class="navbar__burger--flex">
+                            <div class="headerNav__flex--logo">
+                                <img class="header__logo" src="images/logo.svg" alt="Logo oiseau mauve"
+                                    href="index.html">
+                                <h1>Lindsay Lemire</h1>
+                            </div>
+
+                            <div class="navbar__burger--flexbutton">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="section__arts">
+                <div class="row">
+                    <h2>Arts</h2>
+                    <div
+                        class="offset-xl-4 col-xl-3 offset-lg-4 col-lg-3 offset-md-4 col-md-3 offset-sm-4 col-sm-4 col-12">
+                        <img src="images/artimg7.jpg" class="image__grille" alt="Photo dune colombe">
+                    </div>
+                    <div
+                        class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 offset-sm-0 col-sm-6 col-12">
+                        <img src="images/artimg1.jpg" class="image__grille--tablette1"
+                            alt="Photo d'un dessin sur tablette">
+                    </div>
+                    <div
+                        class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 offset-sm-0 col-sm-6 col-12">
+                        <img src="images/artimg2.jpg" class="image__grille" alt="Dessin en couleurs">
+                    </div>
+                    <div class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 col-sm-6 col-12">
+                        <img src="images/artimg3.jpg" class="image__grille--fusain" alt="Dessin au fusain">
+                    </div>
+                    <div
+                        class="offset-xl-0 col-xl-4 offset-lg-0 col-lg-4 offset-md-0 col-md-4 offset-sm-0 col-sm-6 col-12">
+                        <img src="images/artimg4.jpg" class="image__grille--diamondpainting" alt="Diamond painting">
+                    </div>
+                    <div
+                        class="offset-xl-2 col-xl-4 offset-lg-2 col-lg-4 offset-md-2 col-md-4 offset-sm-2 col-sm-8 col-12">
+                        <img src="images/artimg5.jpg" class="image__grille" alt="Dessin sur tablette">
+                    </div>
+                    <div
+                        class="offset-xl-0 col-xl-3 offset-lg-0 col-lg-3 offset-md-0 col-md-3 offset-sm-4 col-sm-4 col-12">
+                        <img src="images/artimg6.jpg" class="image__grille--crane" alt="Photo d'un crane">
+                    </div>
+                </div>
+            </section>
+
+            <section id="section__arts">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h2 class="h2--haut">Le dessin</h2>
+                        <p>Je dessine depuis aussi loin que je m'en souvienne...<br>
+                        Mon père faisait de la peinture et me montrait à dessiner, et en vieillissant je n'ai jamais arrêté
+                        de dessiner. Par exemple la peinture ne m'a jamais intéressé je ne saurais dire pourquoi.
+                        Comme tout enfant cela à commencer aux crayons de couleur normale. Par la suite en vieillissant
+                        et en ayant étudié en art plastique j'ai découvert le fusain et c'est devenu probablement ma méthode préférée.
+                        Je dessine encore aux feutres ou aux crayons de couleur normale mais le fusain reste ma méthode préférée.</p>
+                        <p>J'ai eu un cursus scolaire assez difficile aux niveaux primaire et secondaire. J'ai un trouble de l'anxiété
+                        qui a été diagnostiqué qu'il y a 6 mois...<br>
+                        Au secondaire ont à essayer de me faire passer des tests TDAH etc. Qui tous son tombé négatif donc j'ai dû me battre
+                        pour finir mes études et par la suite me battre pour trouver un métier que j'aimerais.
+                        </p>
+                        <p>J'ai été un an à être suivi par des conseillères d'orientations à la fin du secondaire. C'est alors après de nombreuses
+                        discutions que j'ai décidé de travailler dans le domaine des arts. Aux départ c'était les jeux vidéo mais puisqu'il n'y
+                        a pas de cours à Trois-Rivières et ne me voyant pas déménager j'ai étudié en infographie. Ce qui m'a fait découvrir
+                        le dessin vectoriel et j'ai autant adoré. Je tiens à dire que toutes les icônes excepter les icônes du footer je les ai fait.
+                        Non ce n'était pas demandé mais j'aime faire ça et cela rajoutait un peu plus de moi dans ce site. Je me suis aussi acheté une tablette
+                        à dessin pour Pc ou j'expérimente par plaisir à l'occasion et récemment une tablette comme les tatoueurs pour expérimenter aussi.
+                        </p>
+                        <p>Cela fait maintenant 5 ans que je suis graphiste dans une compagnie de lettrage. Mais mon cours en infographie est ce qui
+                        m'a amené à faire le cours de programmation web. Puisque dans le cours ils donnent une formation basée HTML avec Wordpress et
+                        cela m'a accrochée. J'avoue trouver ça plus dur que le cours d'infographie mais pour moi c'est une autre forme d'art.
+                        Je dirais aussi qu'on pourrait dire que cela enlève aussi le mal de place puisque je déteste faire constamment faire la même
+                        chose et que c'est pour cela que je fais du lettrage et aimerais faire un peu de tout dans l'avenir avec ce cours.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-0 col-xl-6 offset-lg-0 col-lg-6 offset-md-0 col-md-6 col-sm-12 col-12">
+                    <p>intégration des interfaces Web 2 - Projet Final</p>
+                    <p>Lindsay Lemire</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer--leftalign">
+                    <img src="images/facebook-icon.png" class="footer__mediaicon" alt="Icon facebook">
+                    <img src="images/instagram-icon.png" class="footer__mediaicon" alt="Icon instagram">
+                    <img src="images/twitter-icon.png" class="footer__mediaicon" alt="Icon twitter">
+                    <img src="images/linkedin-icon.png" class="footer__mediaicon" alt="Icon linkedin">
+                </div>
+                <div
+                    class="offset-xl-6 col-xl-6 offset-lg-6 col-lg-6 offset-md-4 col-md-8 col-sm-12 col-12 footer--leftalign">
+                    <div class="footer--joindre">
+                        <img src="images/tel.svg" class="footer__mediaicon" alt="Icon téléphone">
+                        <a href="tel:+18193844571">819 384-4571</a>
+                    </div>
+                    <div class="footer--joindre">
+                        <img src="images/mail.svg" class="footer__mediaicon" alt="Icon mail">
+                        <a href="mailto:lindsay_lemire@hotmail.com">lindsay_lemire@hotmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/install.js"></script>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+</script>
